@@ -1,26 +1,230 @@
-@import "tailwindcss";
+   @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+   /* =========================================================
+      REPOIFMA — DESIGN SYSTEM
+      ========================================================= */
 
+   :root {
+   /* -------------------------------------------------------
+      Brand — IFMA Green
+      ------------------------------------------------------- */
+   --color-primary-50: #f0fff4;
+   --color-primary-100: #e1f2e7;
+   --color-primary-200: #c6f6d5;
+   --color-primary-300: #9ae6b4;
+   --color-primary-400: #68d391;
+   --color-primary-500: #48bb78;
+   --color-primary-600: #38a169;
+   --color-primary-700: #2f855a;
+   --color-primary-800: #276749;
+   --color-primary-900: #22543d;
+   --color-primary-950: #1c4532;
+
+   /* -------------------------------------------------------
+      Gray
+      ------------------------------------------------------- */
+   --color-gray-50: #eeeef2;
+   --color-gray-100: #d1d2dc;
+   --color-gray-200: #b3b5c6;
+   --color-gray-300: #9699b0;
+   --color-gray-400: #797d9a;
+   --color-gray-500: #616480;
+   --color-gray-600: #4b4d63;
+   --color-gray-700: #353646;
+   --color-gray-800: #1f2029;
+   --color-gray-900: #181b23;
+
+   /* -------------------------------------------------------
+      Semantic Colors
+      ------------------------------------------------------- */
+   --color-success: #276749;
+   --color-success-bg: #f0fff4;
+
+   --color-warning: #b45309;
+   --color-warning-bg: #fffbeb;
+
+   --color-error: #b42318;
+   --color-error-bg: #fff1f0;
+
+   --color-info: #2563eb;
+   --color-info-bg: #eff6ff;
+
+   /* -------------------------------------------------------
+      Surfaces
+      ------------------------------------------------------- */
+   --color-surface-page: #fbfcfb;
+   --color-surface-default: #ffffff;
+   --color-surface-subtle: #f8faf9;
+   --color-surface-brand: #f0fff4;
+
+   --color-border: #e2e4e9;
+
+   /* -------------------------------------------------------
+      Text
+      ------------------------------------------------------- */
+   --color-text-primary: #181b23;
+   --color-text-secondary: #616480;
+   --color-text-tertiary: #797d9a;
+   --color-text-on-brand: #ffffff;
+
+   /* -------------------------------------------------------
+      Radius
+      ------------------------------------------------------- */
+   --radius-small: 8px;
+   --radius-medium: 12px;
+   --radius-large: 18px;
+   --radius-full: 999px;
+
+   /* -------------------------------------------------------
+      Shadows
+      ------------------------------------------------------- */
+   --shadow-small: 0 1px 2px rgb(0 0 0 / 5%);
+   --shadow-medium: 0 10px 30px rgb(0 0 0 / 8%);
+   --shadow-large: 0 24px 70px rgb(0 0 0 / 18%);
+
+   /* -------------------------------------------------------
+      Spacing
+      ------------------------------------------------------- */
+   --spacing-1: 4px;
+   --spacing-2: 8px;
+   --spacing-3: 12px;
+   --spacing-4: 16px;
+   --spacing-5: 20px;
+   --spacing-6: 24px;
+   --spacing-8: 32px;
+   --spacing-10: 40px;
+   --spacing-12: 48px;
+   --spacing-16: 64px;
+   --spacing-20: 80px;
+
+   /* -------------------------------------------------------
+      Base
+      ------------------------------------------------------- */
+   --background: var(--color-surface-page);
+   --foreground: var(--color-text-primary);
+   }
+
+   /* =========================================================
+      Tailwind Theme
+      ========================================================= */
 @theme inline {
+  /* Colors */
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+  --color-primary-950: var(--color-primary-950);
+
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
+
+  /* Semantic */
+  --color-success: var(--color-success);
+  --color-success-bg: var(--color-success-bg);
+
+  --color-warning: var(--color-warning);
+  --color-warning-bg: var(--color-warning-bg);
+
+  --color-error: var(--color-error);
+  --color-error-bg: var(--color-error-bg);
+
+  --color-info: var(--color-info);
+  --color-info-bg: var(--color-info-bg);
+
+  /* Surfaces */
+  --color-surface-page: var(--color-surface-page);
+  --color-surface-default: var(--color-surface-default);
+  --color-surface-subtle: var(--color-surface-subtle);
+  --color-surface-brand: var(--color-surface-brand);
+  --color-border: var(--color-border);
+
+  /* Text */
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
+  --color-text-on-brand: var(--color-text-on-brand);
+
+  /* Background / Foreground */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Font */
+  --font-sans: var(--font-poppins);
+
+  /* Radius */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 18px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-small: 0 1px 2px rgb(0 0 0 / 5%);
+  --shadow-medium: 0 10px 30px rgb(0 0 0 / 8%);
+  --shadow-large: 0 24px 70px rgb(0 0 0 / 18%);
+}
+   /* =========================================================
+      Base Styles
+      ========================================================= */
+
+   * {
+   box-sizing: border-box;
+   }
+
+   html {
+   scroll-behavior: smooth;
+   }
+
+   body {
+   margin: 0;
+   background: var(--background);
+   color: var(--foreground);
+   font-family: var(--font-poppins), sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   }
+
+   button,
+   input,
+   textarea,
+   select {
+   font: inherit;
+   }
+
+   button {
+   cursor: pointer;
+   }
+
+   button:disabled {
+   cursor: not-allowed;
+   }
+
+   /* =========================================================
+   Accessibility
+   ========================================================= */
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-200);
+  outline-offset: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Inputs não recebem o outline global ao receber foco */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
 }
