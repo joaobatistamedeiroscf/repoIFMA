@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Mail, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { Mail, ArrowLeft } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 import { Input } from "@/src/components/ui/Input";
 import { PasswordInput } from "@/src/components/ui/PasswordInput";
@@ -136,7 +136,6 @@ export default function LoginPage() {
             <div className="mb-5">
               <Alert variant="success">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-success shrink-0" />
                   <span>{successMessage}</span>
                 </div>
               </Alert>

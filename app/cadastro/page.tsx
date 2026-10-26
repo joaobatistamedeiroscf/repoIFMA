@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Mail, User, ArrowLeft, CheckCircle2, ShieldCheck } from "lucide-react";
+import { Mail, User, ArrowLeft, ShieldCheck } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 import { Input } from "@/src/components/ui/Input";
 import { PasswordInput } from "@/src/components/ui/PasswordInput";
@@ -156,7 +156,7 @@ export default function CadastroPage() {
             <div className="mb-5">
               <Alert variant="success">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-success shrink-0" />
+                  
                   <span>{successMessage} Redirecionando para o login...</span>
                 </div>
               </Alert>
